@@ -4,7 +4,6 @@ autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
 jeet         = require 'jeet'
-# sg           = require('sendgrid')('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')
 # jquery       = require 'jquery'
 # slick        = require 'slick-carousel'
 
