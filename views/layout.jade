@@ -1,0 +1,34 @@
+doctype html
+html
+
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content= "DPF Investment")
+    meta(name='author', content= "Heldisch")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    
+    title DPF
+    
+    link(rel='apple-touch-icon', sizes='180x180', href='/img/fav/apple-touch-icon.png')
+    link(rel='icon', type='image/png', href='/img/fav/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/img/fav/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='/img/fav/manifest.json')
+    link(rel='mask-icon', href='/img/fav/safari-pinned-tab.svg', color='#b4c2dc')
+    link(rel='shortcut icon', href='/img/fav/favicon.ico')
+    meta(name='msapplication-config', content='/img/fav/browserconfig.xml')
+    meta(name='theme-color', content='#ffffff')
+    
+    link(rel='stylesheet' href= slick_css)
+    link(rel='stylesheet' href= slick_theme)
+    != css()
+    
+  body
+    block content
+
+    script(src= jquery)
+    script(src= slick_js)
+    script(src= gmapAPI, defer='defer')
+    script(src= waypoints_js)
+    script(src= validate_js)
+    != js()

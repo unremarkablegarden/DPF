@@ -1,0 +1,125 @@
+block content
+  h1.wrap
+    span Köpfe
+  
+  .portraitBg
+    ._2col.wrap
+      ._col
+        img(src='/img/portraits/Vorstand_Portraits_vonBraun.png')
+        .quote „Hohes <br/>Wachstums-<br/>potenzial <br/>und attraktive <br/>Renditen“
+      ._col
+        img(src='/img/portraits/Vorstand_Portraits_Stenger.png')
+        .quote „Bevölkerungs-<br/>prognose bis <br/>2030: Pflege-<br/>bedarf steigt <br/>weiter“
+        
+  ._2col.wrap
+    ._col
+      .portraitBg.mobile
+        .wrapper
+          img(src='/img/portraits/Vorstand_Portraits_vonBraun.png')
+    
+      small Vorstandsvorsitzender
+      h3 Dipl.-Ing. Felix von Braun
+
+      .fold(data-closed='9em')
+        :marked
+          Felix von Braun, Diplom-Ingenieur mit über 18 Jahren Berufserfahrung, ist aktiv in der Immobilien- und Investmentbranche tätig.
+
+          Felix von Braun hat weitreichende Erfahrung als Geschäftsführer, Prokurist und Berater u. a. für Savills, dem drittgrößten Immobilien-Dienstleistungsunternehmen der Welt mit rund 200 Büros und 18.000 Mitarbeitern, einer renommierten Projektentwicklungsgesellschaft (mit einem jährlichen Umsatz von ca. 100 Millionen Euro) und einer Beteiligung des bekannten Finanzinvestors George Soros (Soros-Fonds mit mehr als 1 Mrd. Euro Eigenkapital).
+
+          Felix von Braun hat Firmenübernahmen gesteuert, große Immobilienportfolios verwaltet, optimiert und verkauft sowie diverse nationale und internationale institutionelle Investoren beim An- und Verkauf begleitet. Seit 2010 leitet er als Alleingesellschafter und Vorstandsvorsitzender der DPF Gruppe die Bereiche Immobilien und Unternehmensstrategie.
+
+      include _toggle.jade
+
+      button(data-vita='#vita1').vita Vita
+
+    ._col
+      .portraitBg.mobile
+        .wrapper
+          img(src='/img/portraits/Vorstand_Portraits_Stenger.png')
+    
+      small Vorstand
+      h3 Dipl.-Kfm. Dirk Stenger
+
+      .fold(data-closed='9em')
+        :marked
+          Dirk Stenger, Diplom-Kaufmann und CPA (US-Wirtschaftsprüfer), berät und leitet seit über 20 Jahren Unternehmen in den Bereichen Finanzierung, Controlling, Reporting, Rechnungswesen, IT und Recht.
+
+          Nach seinen Anfangsjahren bei PriceWaterhouseCoopers war er für verschiedene mittelständische Unternehmensgruppen als "Group CFO" tätig.
+
+          Dirk Stenger leitete für die ELIXIA-Gruppe (65 Health & Wellness Clubs in 6 europäischen Ländern, ca. 120 Mio. Euro Umsatz) den Bereich Finanzen und führte zahlreiche Restrukturierungen durch, bis das Private-Equity-Portfoliounternehmen erfolgreich verkauft wurde. 
+
+          Bei der im Bereich Ambulante Medizin tätigen POLIKUM Gruppe, ebenfalls ein Private-Equity-Portfoliounternehmen, war Dirk Stenger als Finanzgeschäftsführer tätig. Über seine anschließende Tätigkeit als selbstständiger Berater stieß er 2014 zur DPF Gruppe. Seit 2015 leitet er als Vorstand der DPF AG und als Geschäftsführer der Tertianum Gruppe die Bereiche Finanzen und Administration.
+        
+      include _toggle.jade
+
+      button(data-vita='#vita2').vita Vita
+
+  ._1col.wrap
+    h2
+      span Aufsichtsrat
+    
+    p Den Aufsichtsrat der DPF AG stellen drei erfahrene Führungskräfte, die mit ihrer Ausbildung, Karriere und Berufserfahrung alle Felder abdecken, die für das Marktsegment relevant sind: Immobilien- und Finanzbranche, Gesundheitswesen und Unternehmensberatung im Asset- und Portfoliomanagement.
+
+  .portraitBg
+    ._3col.wrap
+      ._col
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Holstein_opt.jpg')
+      ._col
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Otto_opt.jpg')
+      ._col
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Hoensbroech_opt.jpg')
+
+  ._3col.wrap
+    ._col
+      .portraitBg.mobile
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Holstein_opt.jpg')
+    
+      .equalHeights
+        small Aufsichtsratsvorsitzender
+        h3 Torsten Hollstein
+        :marked
+          Geschäftsführender Gesellschafter der CR Investment Management GmbH, www.crmanagement.eu; CR ist ein führender paneuropäischer Berater, Asset- und Investmentmanager.
+
+      button(data-vita='#vita3').vita Vita
+
+    ._col
+      .portraitBg.mobile
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Otto_opt.jpg')
+
+      .equalHeights
+        small Aufsichtsrat
+        h3 Dr. Wolfram Otto
+        :marked
+          Geschäftsführender Gesellschafter der Promedio Labor und Genetik Gruppe, einer der Marktführer in Deutschland für ambulante medizinische Versorgung.
+
+      button(data-vita='#vita4').vita Vita
+
+    ._col
+      .portraitBg.mobile
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Hoensbroech_opt.jpg')
+
+      .equalHeights
+        small Aufsichtsrat
+        h3 Marcellino Graf von Hoensbroech
+        :marked
+          International tätiger Immobilieninvestor. Daneben verantwortet er in verschiedenen Gesellschaften im Finanzierungs-, Projektentwicklungs- und Assetmanagement-Bereich Verwaltungsratsmandate.
+
+      button(data-vita='#vita5').vita Vita
+      
+#vitas.hidden
+  #vita1.vita
+    include _vita1.jade
+  #vita2.vita
+    include _vita2.jade
+  #vita3.vita
+    include _vita3.jade
+  #vita4.vita
+    include _vita4.jade
+  #vita5.vita
+    include _vita5.jade
+
+#viewer.hidden
+  .x
+    span
+  .content
+    //- content

@@ -1,0 +1,167 @@
+li.mobile
+  display: block
+  position: fixed
+  // top: 10px
+  top: 15px
+  cursor: pointer
+  a
+    border: 0 !important
+  img
+    width: 20px
+    height: auto
+
++above(769px)
+  .mobile
+    display: none !important
+
+//+between(320px, 768px)
++below(768px)
+  html
+    font-size: 60%
+  section, .wrap
+    center(90%)
+
+  // .portraitBg.mobile
+  //   unstack()
+
+  .fold, .equalHeights
+    height: auto !important
+
+  .lang
+    right: 10px
+    display: none
+
+  .hideMobile
+    display: none !important
+
+  #headingspacer
+    // height: 50px !important
+
+  .toggle
+    display: none !important
+
+  #headingspacer
+    height: 54px !important
+  nav
+    position: relative
+    z-index: 9999
+    background: white
+  nav.open
+    height: 180px
+  nav ul
+    height: 42px !important
+    display: inline-block !important
+    display: block
+    width: 100% !important
+    padding: 0 !important
+    margin: 10px 0 !important
+    // background: transparent !important
+    background-color: white !important
+  nav li
+    flex: none !important
+    flex-flow: none !important
+    clear: both !important
+    float: none !important
+    // display: block !important
+  li.mobile
+    padding-top: 1em
+    // padding: 1em
+  li.link
+    position: relative !important
+    top: 50px
+    background: white !important
+    padding: 0.5em 0 1.5em 0 !important
+
+  #gallery
+    margin-bottom: 0 !important
+    .image
+      background-size: cover !important
+      background-repeat: no-repeat !important
+      background-position: center center !important
+    a.more
+      button: white, 'small'
+      b()
+      padding: 5px 11px !important
+    .slick-dots
+      bottom: 90px !important
+    h1
+      font-size: 2em
+      padding-left: 30px !important
+      padding-right: 30px !important
+      margin: 0 !important
+    .inner h2, .inner button
+      display: none !important
+    .caption .inner
+      padding: 0
+    .mobile
+      text-align: center !important
+      padding: 0 1em !important
+      font-size: 1em
+      h2
+        margin: 1em 0
+      button
+        display: inline-block !important
+        // padding: 5px 11px !important
+    .slick-next, .slick-prev
+      top: 40%
+    .third3
+      a
+        display: none !important
+  #section1 p
+    padding: 0 !important
+  #gallery .mobile
+    h2
+      //font-size: 14px !important
+  #section3
+    h1
+      margin-top: 50px !important
+      margin-bottom: 20px !important
+    .toggle
+      width: 100% !important
+    ._2col ._col p
+      padding-right: 0 !important
+  .portraitBg
+    ._2col.wrap
+      display: none !important
+  #viewer
+    width: 90vw !important
+    left: 5vw !important
+    .text
+      padding: 0 1em 1em !important
+    .portraitBg .wrapper
+      padding: 0 2em !important
+  .portraitBg.mobile
+    margin-top: 20px !important
+    height: 236px !important
+    margin-bottom: 20px !important
+    overflow: hidden
+    text-align: center !important
+    img
+      float: none !important
+      position: relative !important
+      // left: 13px !important
+  ._1col
+    margin-bottom: 30px !important
+    p
+      padding: 0 !important
+  .portraitBg
+    ._3col.wrap
+      display: none !important
+  ._3col.wrap
+    .portraitBg.mobile
+      img
+        width: 176px !important
+        height: auto
+        // margin-left: 45px !important
+  #kontakt
+    #map
+      height: 60vh !important
+      margin-bottom: 2em !important
+    .first, .second, .mobile
+      width: 100% !important
+      padding: 0 1em 2em !important
+    .second
+      display: none !important
+    form
+      input, textarea
+        width: 100% !important

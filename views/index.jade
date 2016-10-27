@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  
+  header#header
+    .wrap
+      .lang
+        a(href='/').active DE
+        span.sep  | 
+        a(href='/EN/') EN
+      
+      include ../content/_menu.jade
+      
+      #backTop
+        img(src='/img/back_top.svg')
+  
+  #headingspacer
+  
+  #gallery.wrap
+    include ../content/_gallery.jade
+  
+  //- Das Unternehmen
+  section#section1
+    include ../content/_section1.jade
+  
+  //- Geschäftsfelder
+  section#section2
+    include ../content/_section2.jade
+  
+  //- Die Köpfe
+  section#section3
+    include ../content/_section3.jade
+
+  //- Investitionskriterien
+  //section#section4
+    //include ../content/_section4.jade
+
+  section#kontakt
+    include ../content/_kontakt.jade
+    
+  section#footer
+    include ../content/_footer.jade
+      
+  section#impressum.hidden
+    include ../content/_impressum.jade
+
+  section#datenschutz.hidden
+    include ../content/_datenschutz.jade

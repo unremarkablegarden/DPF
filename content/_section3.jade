@@ -1,0 +1,125 @@
+block content
+  h1.wrap
+    span Experts
+  
+  .portraitBg
+    ._2col.wrap
+      ._col
+        img(src='/img/portraits/Vorstand_Portraits_vonBraun.png')
+        .quote „High growth <br/>potential and <br/>attractive returns <br/>on investment“
+      ._col
+        img(src='/img/portraits/Vorstand_Portraits_Stenger.png')
+        .quote „Demographic <br/>forecast up to <br/>2030 show that <br/>the need for care <br/>facilities will <br/>continue to increase“
+        
+  ._2col.wrap
+    ._col
+      .portraitBg.mobile
+        .wrapper
+          img(src='/img/portraits/Vorstand_Portraits_vonBraun.png')
+    
+      small Chairman of the Board of Management
+      h3 Felix von Braun, Engineer (Dipl.-Ing.)
+
+      .fold(data-closed='165')
+        :marked
+          Felix von Braun, graduate engineer and with more than 18 years of professional experience, active in the real estate and investment sectors.
+
+          Felix von Braun has extensive experience as a managing director, holder of special powers of attorney (Prokurist) and as a consultant, among others for Savills, the world’s third largest real estate services company with around 200 offices and 18,000 employees, a renowned project development company (with annual turnover of approx. 100 million euros) and for an investment of well-known finance investor George Soros (Soros fund with more than 1 billion euros equity capital).
+
+          Felix von Braun has managed corporate takeovers, has managed, optimised and sold large real estate portfolios as well as accompanying various German and international institutional investors in purchases and sales. Since 2010, as the sole shareholder and Chairman of the Board of the DPF Group, he has been in charge of the real estate and corporate strategy departments.
+
+      include _toggle.jade
+
+      button(data-vita='#vita1').vita Vita
+
+    ._col
+      .portraitBg.mobile
+        .wrapper
+          img(src='/img/portraits/Vorstand_Portraits_Stenger.png')
+    
+      small Member of the Board of Management
+      h3 Dirk Stenger, business administrator (Dipl.-Kfm.)
+
+      .fold(data-closed='165')
+        :marked
+          Dirk Stenger, graduate business administrator and CPA (USA), has been providing consultancy and management services for more than 20 years to companies in the areas of finance, controlling, reporting, accounting, IT and law.
+
+          Following his initial years at PriceWaterhouseCoopers, he worked in various medium-sized corporate groups as “Group CFO”.
+
+          For the ELIXIA Group (65 health & spa clubs in 6 European countries, approx. 120 million euros turnover), Dirk Stenger managed the financial area and carried out numerous restructurings until the private equity portfolio company was sold successfully.
+
+          Dirk Stenger was also CFO in the POLIKUM Group, a private equity portfolio company active in the area of outpatient medicine. While working as a self-employed consultant, he joined the DPF Group in 2014. Since 2015, as member of the management board of DPF AG and managing director of the Tertianum Group, he has been in charge of the areas of finance and administration.
+        
+      include _toggle.jade
+
+      button(data-vita='#vita2').vita Vita
+
+  ._1col.wrap
+    h2
+      span Supervisory Board
+    
+    p The Supervisory Board of DPF AG is made up of three experienced managers who, with their educational qualifications, career and professional experience, cover all fields that are relevant for the market segment: Real estate and finance, healthcare and corporate consultancy in asset and portfolio management.
+
+  .portraitBg
+    ._3col.wrap
+      ._col
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Holstein_opt.jpg')
+      ._col
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Otto_opt.jpg')
+      ._col
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Hoensbroech_opt.jpg')
+
+  ._3col.wrap
+    ._col
+      .portraitBg.mobile
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Holstein_opt.jpg')
+    
+      .equalHeights
+        small Chairman of the Supervisory Board
+        h3 Torsten Hollstein
+        :marked
+          Managing shareholder of CR Investment Management GmbH, www.crmanagement.eu; CR is a leading pan-European consultant, asset and investment manager.
+
+      button(data-vita='#vita3').vita Vita
+
+    ._col
+      .portraitBg.mobile
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Otto_opt.jpg')
+
+      .equalHeights
+        small Member of the Supervisory Board
+        h3 Dr. Wolfram Otto
+        :marked
+          Managing shareholder of Promedio laboratory and genetics group, one of the market leaders in Germany in the area of outpatient medical care.
+
+      button(data-vita='#vita4').vita Vita
+
+    ._col
+      .portraitBg.mobile
+        img(src='/img/portraits/Aufsichtsrat_Portraits_Hoensbroech_opt.jpg')
+
+      .equalHeights
+        small Member of the Supervisory Board
+        h3 Marcellino Graf von Hoensbroech
+        :marked
+          Internationally operating real estate investor. He also holds positions as a member of the administrative board in various companies in the finance, project development and asset management sectors.
+
+      button(data-vita='#vita5').vita Vita
+      
+#vitas.hidden
+  #vita1.vita
+    include _vita1.jade
+  #vita2.vita
+    include _vita2.jade
+  #vita3.vita
+    include _vita3.jade
+  #vita4.vita
+    include _vita4.jade
+  #vita5.vita
+    include _vita5.jade
+
+#viewer.hidden
+  .x
+    span
+  .content
+    //- content

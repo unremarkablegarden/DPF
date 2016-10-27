@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300')
+
+$ssp = 'Source Sans Pro'
+
+body
+  margin: 50px
+  line-height: 1.333em
+  letter-spacing: 0.013em
+  cursor: default
+  text-align: center
+
+p
+  line-height: 1.333em
+
+h1, .caption h1
+  font-family: $ssp
+  font-weight: 300
+  font-size: 2.667em
+  line-height: 1em
+  letter-spacing: 0.07em
+
+section
+  h1, h2
+    position: relative
+    z-index: 1
+    margin: 1.667em 0
+    text-align: center
+    &:before
+      border-top: 2px solid #9f9f9f;
+      content:"";
+      margin: 0 auto;
+      position: absolute;
+      top: 50%; left: 0; right: 0; bottom: 0;
+      width: 100%;
+      z-index: -1;
+    span
+      background: #fff;
+      padding: 0 15px;
+  h2
+    font-size: 1.222em
+
+
+h2, h3
+  font-family: $arial
+  font-weight: bold
+  font-size: 1.222em
+  letter-spacing: 0.013em
+
+h3
+  font-size: 1.222em !important
+  margin: 0 0 1em !important
+  font-weight: bold !important
+  line-height: 1.1em !important
+
+.lang, .menu
+  font-size: 0.778em
+  text-transform: uppercase
+  letter-spacing: 0.041em
+  color: #848484
+
+nav
+  font-size: 0.889em
+  text-transform: uppercase
+  letter-spacing: 0.041em
+  font-weight: bold
+
+.caption
+  color: white
+  letter-spacing: 0.01em
+  h1, h2
+    text-shadow: 0 0 15px black
+  h2
+    font-family: $arial
+    font-weight: normal
+    line-height: 1.778em
+    font-size: 1.222em
+
+.quote
+  position: relative
+  // display: inline-block
+  left: 1.389em
+  font-style: italic
+  letter-spacing: 0.041em
+  color: #6c8184
+  // font-size: 1.333em !important
+  // line-height: 1.042em !important
+  font-size: 24px
+  line-height: 25px
+  padding-right: 2em
+  // top: -2em
+  float: left
+  padding-top: 3em

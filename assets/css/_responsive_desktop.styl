@@ -1,0 +1,47 @@
+// LAPTOP & DESKTOP
++above(1224px)
+  section, .wrap
+    center(1200px)
+  button, a.more
+    button: transparent, 'medium'
+  #section3 ._2col ._col
+    padding-right: 8em !important
+
++between(1024px, 1223px)
+  section, .wrap
+    center(960px)
+  #section3 ._2col ._col
+    padding-right: 6em !important
+
++above(1024px)
+  ._3col
+    ._col
+      col(1/3, 0, 0, 0, 10)
+  ._2col
+    ._col
+      col(1/2, 0, 0, 0, 3)
+  ._2col_span
+    ._col
+      span(1/2)
+
+// +between(768px, 1223px)
++below(1223px)
+  button, a.more
+    button: transparent, 'small'
+
++below(1224px)
+  html
+    font-size: 80%
+  #backTop
+    width: 40px !important
+    right: 10px
+    bottom: 10px
+  #section3 .portraitBg ._2col img
+    width: 216px !important
+  #section3 .portraitBg ._3col img
+    width: 147px !important
+  +html5-inputs()
+    font-size: 1em !important
+  .quote
+    font-size: 18px
+    line-height: 19px

@@ -1,0 +1,358 @@
+@import 'jeet'
+@import '_settings'
+@import '_typography'
+
+global-reset()
+normalize-css()
+border-box-html()
+base()
+// edit()
+
+$logoWidth = 102px
+$headerHeight = 100px
+$headerPadTop = 30px
+$headerPadBottom = 20px
+$headerTotal = 150px
+$galleryFix = 180px // headerTotal + 30 = padding at the bottom
+
+@import '_gallery'
+
+
+// -------------- LAYOUT ---------------------
+
+@import '_responsive_desktop'
+@import '_responsive_tablet'
+@import '_responsive_mobile'
+@import '_responsive_mobile_landscape'
+@import '_responsive_mobile_portrait'
+
+#header
+  // background: pink !important
+  // opacity: 0.8
+  nav ul
+    padding: 0 7em 0 1em
+    background-image: url(/img/DPF-AG.svg) !important
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: right center
+    height: 100px
+    min-height: 35px
+    margin-top: 20px
+    margin-bottom: 20px
+    +below(1224px)
+      height: 80px
+      min-height: 32px
+      margin-top: 16px
+      margin-bottom: 16px
+    +below(1024px)
+      height: 66px
+      min-height: 30px
+      margin-top: 14px
+      margin-bottom: 14px
+    li
+      padding-bottom: 9px
+      +below(1224px)
+        padding-bottom: 8px
+      +below(1024px)
+        padding-bottom: 7px
+
+#headingspacer
+  // background: lightblue
+  height: 130px
+  +below(1224px)
+    height: 104px
+  +below(1024px)
+    height: 86px
+
+nav
+  ul
+    // top: -1.5em
+    overflow: visible
+    // width: calc(100% - 102px)
+    display: flex
+    justify-content: space-between
+    flex-flow: row nowrap
+    position: relative
+    z-index: 9998
+    li
+      flex: 1 1 auto
+      align-self: flex-end
+      text-align: left
+      // background: white
+
+a
+  transition(all 400ms)
+a.active
+  transition(all 400ms)
+  border-bottom: 2px #848484 solid !important
+
+figure
+  margin: 0
+  padding: 0
+
+button
+  border: 1px rgba(0,0,0,0.5) solid
+  color: #777
+  display: block
+  uppercase()
+  transition()
+  hover-color: #444
+  &:hover
+    transition()
+    b()
+
+.hidden
+  display: none
+
+// ALL
+section
+  group()
+  p
+    margin: 0 0 1em 0
+
+._1col
+  cf()
+  clear: both
+
+.fold
+  overflow-y: hidden
+  margin-bottom: 10px
+  transition(all 1s ease)
+.toggle
+  // background: rgba(255,0,0,0.3)
+  cursor: pointer
+  width: 100%
+  border: 0
+  padding: 0
+  margin: 0
+  hover-color: none !important
+.open
+  display: block
+.close
+  display: none
+
+img.hexagon
+  width: 140px
+  margin-bottom: 4em
+  margin-top: 2em
+
+#section1, #section4, ._1col
+  p
+    padding: 0 3.333em
+
+#section2
+  h3
+    min-height: 4em
+
+#section3
+  unstack()
+  h1
+    margin-top: 3em
+  small
+    font-size: 0.944em
+    line-height: 2em
+  ._2col ._col, ._3col ._col
+    text-align: left
+  ._2col ._col
+    // padding-right: 8em //6.667em
+  ._1col
+    margin-top: 4em
+    margin-bottom: 5em
+  .portraitBg
+    background: url(/img/background2.svg)
+    background-size: cover
+    background-position: center center
+    margin-bottom: 45px
+    ._col
+      line-height: 0
+      font-size: 0
+    img
+      line-height: 0
+      font-size: 0
+      float: left
+      width: 270px
+      height: auto
+    ._3col
+      img
+        width: 183px
+        height: auto
+  button
+    margin-top: 5px
+
+.equalHeights
+  height: 15em
+
+
+#viewer
+  position: fixed
+  top: 5vh
+  left: 15vw
+  width: 70vw
+  height: 90vh
+  background: white
+  // padding: 3em
+  z-index: 9999
+  box-shadow: 0 20px 100px black
+  overflow-x: hidden
+  overflow-y: auto
+  .portraitBg
+    margin-top: 60px
+    height: 200px
+    img
+      height: 200px
+      width: auto
+    .wrapper
+      margin: 0 auto
+      padding: 0 5em
+  .text
+    padding: 0 5em 3em
+    td.l
+      width: 10em
+      font-weight: bold
+    td
+      vertical-align: top
+      font-size: 0.778em
+      line-height: 1.5em
+      padding-bottom: 1em
+
+#viewer .x span
+  icon-x(25px)
+  margin: 17px
+  cursor: pointer
+  position: fixed
+
+
+#section4
+  img
+    width: 43.78%
+    margin-bottom: 3em
+    margin-top: 3em
+  ._col p
+    padding: 0
+
+#kontakt
+  unstack()
+  .fullWrap
+    background: #EEE
+  .inner
+    padding-bottom: 6.222em
+  p, h3
+    text-align: left
+  h1
+    text-align: center
+    margin-top: 3em
+  #map, #map iframe
+    height: 26.667em
+    width: 100%
+    border: 0
+    margin-bottom: 8.333em
+  .first
+    width: 75%
+    padding-right: 5%
+    margin: 0 !important
+    p
+      width: 75%
+  .second
+    width: 20%
+    margin: 0 !important
+a
+  transition: color .3s ease
+  color: #777
+  text-decoration: none
+a:hover
+  transition: color .3s ease
+  color: black
+  cursor: pointer
+
+form
+  div
+    autofill(green, white)
+    margin-top: 1em
+  .submit
+    button: transparent, 'small', #777
+    b()
+    hover-color: #777
+    text-transform: uppercase
+    &:hover
+      color: white
+  //form .long
+    // width: 700px !important
+  .result
+    font-size: 2em
+  +below(768px)
+    .center
+      width: 40vw
+      text-align: center
+
+label.error
+  font-size: 0.8em
+  margin-left: 1em
+
+// .disabled
+//   opacity: 0.5
+
++html5-inputs()
+  input: #777 75%
+
+
+#header
+  // opacity: 0.4
+  position: fixed
+  top: 0
+  width: 100% !important
+  background: white
+  z-index: 9998
+  .logo
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    img
+      height: auto
+      position: relative
+      cursor: pointer
+  nav
+    // height: 0
+  a
+    border-bottom: 2px white solid
+
+
+
+.lang
+  absolute()
+  top: 20px
+  opacity: 1
+  z-index: 9999
+  // display: none
+
+
+#footer
+  padding: 0 0 70px 0
+  span.impressum
+    padding-right: 2em
+  .logo
+    text-align: center
+    img
+      width: 9vw
+    span
+      // width: 130px
+      display: inline-block
+  .left
+    float: left
+    a
+      border: 0 !important
+  .right
+    float: right
+
+#impressum, #datenschutz
+  text-align: left
+  padding-bottom: 100px
+
+#backTop
+  position: fixed
+  bottom: 20px
+  right: 20px
+  width: 50px
+  height: auto
+  cursor: pointer
+  opacity: 0

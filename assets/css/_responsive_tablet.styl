@@ -1,0 +1,27 @@
+// TABLET
+
++between(769px, 1024px)
+  ._3col
+    ._col
+      col(1/3, 0, 0, 0, 8)
+  ._2col
+    ._col
+      col(1/2, 0, 0, 0, 12)
+  ._2col_span
+    ._col
+      span(1/2)
+
++below(1023px)
+  .quote
+    display: none !important
+
++between(769px, 1023px)
+  html
+    font-size: 66%
+  section, .wrap
+    center(700px)
+  #section3
+    .quote
+      width: 140px
+      padding-right: 0
+      font-size: 20px !important

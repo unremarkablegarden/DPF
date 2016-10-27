@@ -1,0 +1,136 @@
+#gallery
+  .image
+    //1200x800 x2
+    background: #999
+    width: 100%
+    background-position: center center !important
+    background-size: cover !important
+    text-align: center
+
+    height: "calc(100vh - %s)" % $galleryFix
+    // +below(1224px)
+    //   height: "calc(100vh - %s)" % $galleryFix
+    +between(767px, 1023px)
+      height: 50vh
+    +below(768px)
+      height: 60vh
+
+
+
+  .caption
+    height: 100%
+    // padding: 0 120px !important
+    width: 82% !important
+    margin: 0 auto
+    h1
+      margin: 0
+    center()
+    .inner
+      height: 100%
+    .third1, .third2, .third3
+      height: 33.3%
+    .third1
+      // background: rgba(255,0,0,0.1)
+      p
+        display: none
+      h1
+        padding-top: 1.5em
+    .third2
+      // background: rgba(0, 255,0,0.1)
+      h1
+        vertically-align()
+    .third3
+      // background: rgba(0,0,255,0.1)
+      padding: 0 3%
+      .vc
+        padding: 0
+        margin: 0
+        vertically-align()
+
+    button, a.more
+      margin-top: 1em
+      transition()
+      border: 1px rgba(255,255,255,0.7) solid
+      uppercase()
+      hover-glow(white, 75px)
+      hover-color: white true
+      &:hover
+        transition()
+        b()
+        background-color: rgba(255,255,255,0.2)
+    a.more
+      display: inline-block
+  .slick-arrow
+    z-index: 9000
+    width: 40px
+    height: 40px
+    // margin-top: -20px
+    background-size: contain
+    +below(1224px)
+      width: 32px
+      height: 32px
+    +below(1024px)
+      width: 25px
+      height: 25px
+    +below(768px)
+      width: 15px
+      height: 15px
+  .slick-prev
+    left: 30px
+    +below(1224px)
+      left: 24px
+    +below(1024px)
+      left: 20px
+    +below(768px)
+        left: 10px
+    background-image: url(/img/prev.svg)
+  .slick-next
+    right: 30px
+    +below(1224px)
+      right: 24px
+    +below(1024px)
+      right: 20px
+    +below(768px)
+      right: 10px
+    background-image: url(/img/next.svg)
+  .slick-prev:before
+    content: ''
+  .slick-next:before
+    content: ''
+  button:before
+    color: white
+    opacity: 1
+
+  // .slick-dots li, .slick-dots li button:before, .slick-dots li button
+  //   width: 15px !important
+  //   height: 15px !important
+  //   line-height: 15px !important
+  //
+
+
+  +below(1224px)
+    .slick-dots li, .slick-dots li button:before, .slick-dots li button
+      width: 16px !important
+      height: 16px !important
+      line-height: 16px !important
+  +below(1024px)
+    .slick-dots li, .slick-dots li button:before, .slick-dots li button
+      width: 13px !important
+      height: 13px !important
+      line-height: 13px !important
+
+  .slick-dots
+    opacity: 0.8 !important
+    bottom: 1.6vh
+    button:before
+      content: ''
+    button
+      background: url(/img/slider-border.svg)
+      background-size: contain
+      background-repeat: no-repeat;
+      background-position: center center
+  .slick-active
+    background: url(/img/slider-full.svg)
+    background-size: contain
+    background-repeat: no-repeat;
+    background-position: center center

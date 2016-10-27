@@ -1,0 +1,39 @@
+mixin toggle
+  include _toggle.jade
+
+block content
+  h1 
+    span Geschäftsfelder
+  ._3col
+    ._col    
+      img(src='/img/hexagon_red.svg').hexagon
+      
+      h3 Real Estate — Investitionen, die neue Perspektiven eröffnen
+      
+      .fold(data-closed='5em')
+        :marked
+          Potentiale und Bedarf erkennen, Lösungen entwickeln und Lücken schließen – so lautet unsere Strategie. Es gilt: ohne Spezialwissen keine Lösungen. Das Betreiben von Pflegeheimen, Betreutem Wohnen und Servicewohnen kennen wir. Die nachhaltige Ertragsoptimierung auf der Immobilien- und Betreiberseite können wir. Auch die Projektentwicklung, den An- und Verkauf sowie die Finanzierungsstrukturierung – alles zusammen unser Mehrwert, den wir bieten und der gleichzeitig Voraussetzung für unsere erfolgreiche Performance mit Zukunftsperspektive ist.
+      
+      +toggle
+
+    ._col
+      img(src='/img/hexagon_green.svg').hexagon
+      
+      h3 Betreibergesellschaft — Dienstleistungen, die den Ruhestand neu definieren
+        
+      .fold(data-closed='5em')
+        :marked
+          Wer seine Zielgruppen kennt, ist im Vorteil; wir kennen unsere. Deshalb können wir Betreibergesellschaften im Dienstleistungsbereich rund um das Thema „Wohnen im Alter“ mit bedarfsorientierten Produktkonzepten ausbauen. Unser klarer Fokus: die Tertianum Gruppe. Für dieses im Bereich „Premium-Wohnen im Alter“ führende Unternehmen haben wir ein verzahntes Produktuniversum entwickelt, bestehend aus Betreutem Wohnen, Serviced Apartments in Kombination mit ambulanter und stationärer Pflege sowie erstklassiger Gastronomie, Hauswirtschaft und Concierge-Services. Unsere Produkte sind erfolgreich – für das angemessene Leben und eine gesicherte Zukunft im Alter.
+      
+      +toggle
+
+    ._col
+      img(src='/img/hexagon_blue.svg').hexagon
+      
+      h3 Beteiligungen — Technologie, Service und Innovationen rund um das Thema "Wohnen im Alter"
+      
+      .fold(data-closed='5em')
+        :marked
+          Wohnen über den gebauten Raum hinaus denken: Das ist für uns Herausforderung und Anspruch zugleich. Wer das kann, dem wird es auch gelingen,  Leben im Alter und Ruhestand lebenswert zu gestalten. Wir schaffen deshalb individuelle Lösungen für altersgerechtes und lebenswertes Wohnen. Und beteiligen uns auch an Dienstleistungs- und anderen innovativen Unternehmen, die sich durch Technologie, Service und Vermarktung rund um das Thema „Wohnen im Alter“ auszeichnen. Damit bringen wir unsere Produkte auf den neuesten Stand und definieren Zukunft nachhaltig und neu. 
+      
+      +toggle  
